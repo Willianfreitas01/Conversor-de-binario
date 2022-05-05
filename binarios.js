@@ -1,8 +1,12 @@
 const numerosBinarios = (bin) => {
-    if (bin <= 8) {
+    console.log(bin);
+    let transform = bin.length - 1
+    console.log(transform)
+    if (bin <= bin.length) {
         return "boa"
     }
-    return "nada"
-
+    else {
+        return "nada"
+    }
 }
-console.log(numerosBinarios(1,0,0,0,0,0,1,1,1))
+console.log(numerosBinarios(0,1,0,1,0))
