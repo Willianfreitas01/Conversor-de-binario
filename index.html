@@ -19,16 +19,23 @@
 </body>
 <script>
     function imprimeNome() {
-        const numeroDigitado = document.getElementById("numeros").value
+        const numeroDigitado = document.getElementById("numeros").value.toString()
         numerosBinarios(numeroDigitado)
 
     }
     function numerosBinarios(bin) {
-        if (bin === 0 || 1) {
-            console.log("Numero está dentro das regras")
-        }
-        else {
-            console.log("O numero não está dentro das regras")
+        let zeroUm = 0
+        for (let index = 0; index <= 8; index++) {
+            zeroUm = zeroUm[index];
+
+
+            if (bin === zeroUm || bin === zeroUm) {
+                console.log("O(s) Numero está dentro das regras")
+            }
+
+            else {
+                console.log("O(s) numero não está dentro das regras")
+            }
         }
     }
 </script>
