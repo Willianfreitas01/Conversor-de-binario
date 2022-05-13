@@ -9,22 +9,31 @@
 </head>
 
 <body>
-    <input id="numeros" maxlength="8">
+    <input id="numeros" maxlength="8" oninput="somenteBinarios()">
 
     </input>
-    <button onclick="imprimeNome()">
+    <button onclick="converteBinario()">
         Converter para decimal!
 
     </button>
 </body>
 <script>
-    function imprimeNome() {
+    function converteBinario() {
         const numeroDigitado = document.getElementById("numeros").value.toString()
-        numerosBinarios(numeroDigitado)
 
     }
-    function numerosBinarios(bin) {
-        
+    function somenteBinarios() {
+        const numeroDigitado = document.getElementById("numeros").value.toString()
+
+        if (numeroDigitado.includes("0")) {
+            console.log(numeroDigitado)
+        }
+        else if (numeroDigitado.includes("1")) {
+            console.log(numeroDigitado)
+        }
+        else {
+            alert('Não é um numero binario')
+        }
     }
 </script>
 
