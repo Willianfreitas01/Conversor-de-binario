@@ -19,17 +19,15 @@
 </body>
 <script>
     function converteBinario() {
-        const numeroDigitado = document.getElementById("numeros").value.toString()
-
+        const numeroDigitado = document.getElementById("numeros").value
+        const numeroDecimal = parseInt(numeroDigitado, 2)
+        alert("o numero decimal é: " + numeroDecimal)
     }
     function somenteBinarios() {
         const numeroDigitado = document.getElementById("numeros").value.toString()
-
         if (numeroDigitado.includes("0")) {
-            console.log(numeroDigitado)
         }
         else if (numeroDigitado.includes("1")) {
-            console.log(numeroDigitado)
         }
         else {
             alert('Não é um numero binario')
